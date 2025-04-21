@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
   <title>Frontend Mentor | Social links profile</title>
   <style>
     :root {
@@ -21,25 +21,20 @@
       font-family: 'Inter', sans-serif;
       font-size: 14px;
       background-color: var(--color-grey-900);
-      color: #FFFFFF;
-      text-align: center;
+      color: #ffffff;
       font-weight: bold;
       margin: 0;
-    }
-
-    .container {
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
-      padding: 20px;
       justify-content: center;
       align-items: center;
-      box-sizing: border-box;
+      padding: 20px;
     }
 
     .card {
       max-width: 300px;
-      margin: 0 auto;
+      width: 100%;
       padding: 20px;
       background-color: var(--color-grey-800);
       border-radius: 10px;
@@ -99,53 +94,41 @@
     .attribution {
       font-size: 12px;
       text-align: center;
-      margin-top: 30px;
-    }
-    
-    .attribution p {
-      gap: 10px;
+      margin-top: 20px;
     }
 
-    .attribution a { 
+    .attribution a {
       color: var(--color-green-100);
       text-decoration-color: var(--color-green-100);
     }
 
-    @media (max-width: 375px) {
-      .social-links button {
-        padding: 12px 20px;
-        width: 100%;
-      }
-
+    /* Responsivo para desktop */
+    @media (min-width: 1440px) {
       .card {
-        width: 100%;
+        max-width: 375px;
       }
     }
   </style>
 </head>
 <body>
+  <div class="card">
+    <img src="https://github.com/GabrielAugustoBer.png" alt="Foto de perfil" />
+    <h1>Gabriel Augusto</h1>
+    <h2>Minas Gerais, Brasil</h2>
+    <p>"Front-end developer and avid reader."</p>
 
-  <main class="container">
-    <div class="card">
-      <img src="https://github.com/GabrielAugustoBer.png" alt="Foto de perfil">
-      <h1>Gabriel Augusto</h1>
-      <h2>Minas Gerais, Brasil</h2>
-      <p>"Front-end developer and avid reader."</p>
-
-      <div class="social-links">
-        <button type="button">GitHub</button>
-        <button type="button">Frontend Mentor</button>
-        <button type="button">LinkedIn</button>
-        <button type="button">Twitter</button>
-        <button type="button">Instagram</button>
-      </div>
+    <div class="social-links">
+      <button type="button">GitHub</button>
+      <button type="button">Frontend Mentor</button>
+      <button type="button">LinkedIn</button>
+      <button type="button">Twitter</button>
+      <button type="button">Instagram</button>
     </div>
+  </div>
 
-    <div class="attribution">
-      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
-      <p>Coded by <a href="https://github.com/GabrielAugustoBer">Gabriel Augusto</a>.</p>
-    </div>
-  </main>
-
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="https://github.com/GabrielAugustoBer">Gabriel Augusto</a>.</p>
+  </div>
 </body>
 </html>

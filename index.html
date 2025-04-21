@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Social links profile</title>
+  <style>
+    :root {
+      --color-green-100: hsl(75, 94%, 57%);
+      --color-white-100: hsl(0, 0%, 100%);
+      --color-grey-700: hsl(0, 0%, 20%);
+      --color-grey-800: hsl(0, 0%, 12%);
+      --color-grey-900: hsl(0, 0%, 8%);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      background-color: var(--color-grey-900);
+      color: #FFFFFF;
+      text-align: center;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    .card {
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: var(--color-grey-800);
+      border-radius: 10px;
+      color: hsl(0, 0%, 100%);
+      align-items: center;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    .card h1 {
+      font-size: 18px;
+    }
+
+    .card h2 {
+      font-size: 14px;
+      color: var(--color-green-100);
+      margin-bottom: 25px;
+      font-weight: normal;
+    }
+
+    .card p {
+      color: #c0c0c0;
+      font-weight: normal;
+    }
+
+    .social-links {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 10px;
+    }
+
+    button {
+      padding: 14px 80px;
+      max-height: 100px;
+      background-color: var(--color-grey-700);
+      color: var(--color-white-100);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: var(--color-green-100);
+      color: var(--color-grey-700);
+    }
+
+    .attribution {
+      font-size: 12px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .attribution p {
+      gap: 10px;
+    }
+
+    .attribution a { 
+      color: var(--color-green-100);
+      text-decoration-color: var(--color-green-100);
+    }
+
+    @media (max-width: 375px) {
+      .social-links button {
+        padding: 12px 20px;
+        width: 100%;
+      }
+
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <div class="card">
+      <img src="https://github.com/GabrielAugustoBer.png" alt="Foto de perfil">
+      <h1>Gabriel Augusto</h1>
+      <h2>Minas Gerais, Brasil</h2>
+      <p>"Front-end developer and avid reader."</p>
+
+      <div class="social-links">
+        <button type="button">GitHub</button>
+        <button type="button">Frontend Mentor</button>
+        <button type="button">LinkedIn</button>
+        <button type="button">Twitter</button>
+        <button type="button">Instagram</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+      <p>Coded by <a href="https://github.com/GabrielAugustoBer">Gabriel Augusto</a>.</p>
+    </div>
+  </main>
+
+</body>
+</html>

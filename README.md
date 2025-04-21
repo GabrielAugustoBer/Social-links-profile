@@ -52,12 +52,6 @@ Neste projeto, reforcei meus conhecimentos em responsividade utilizando `flexbox
 }
 ```
 
-```html
-<div class="card">
-  <h1>Gabriel Augusto</h1>
-</div>
-```
-
 ## Author
 
 - GitHub - [@GabrielAugustoBer](https://github.com/GabrielAugustoBer)
